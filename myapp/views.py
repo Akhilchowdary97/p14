@@ -20,11 +20,11 @@ def post_demo(request):
     return render(request,"post_demo.html")
 def register(request):
     if request.method=="POST":
-        first_name=request.POST.get("first_name")
-        last_name=request.POST.get("last_name")
-        email=request.POST.get("email")
-        password=request.POST.get("pwd")
-        phno=request.POST.get("phno")
+        First_Name=request.POST.get("First_Name")
+        Last_Name=request.POST.get("Last_Name")
+        Email=request.POST.get("Email")
+        Phone_Number=request.POST.get("Phone_Number")
+        Password=request.POST.get("Password")
         date=request.POST.get("birthday_day")
         month=request.POST.get("birthday_month")
         year=request.POST.get("birthday_year")
@@ -33,7 +33,8 @@ def register(request):
             gender="FeMale"
         else:
             gender="Male"
-        send_mail("Thanks For Registration","hello Mr./Ms.{} {}\n Thanks for Registering".format(first_name,last_name),
-        "m.akhilchowdary97@gmail.com",[email,],fail_silently=False)
-        return HttpResponse("{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>".format(first_name,last_name,email,password,phno,gender,date,month,year))
-    return render(request,"myapp/registrations.html")
+
+        send_mail("Thanks For Registration","hello Mr./Ms.{} {}\n Thanks for Registering".format(First_Name,Last_Name),
+        "m.akhilchowdary97@gmail.com",[Email,],fail_silently=False)
+        return HttpResponse("{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br>{}<br".format(First_Name,Last_Name,Email,Phone_Number,Password,gender,date,month,year))
+    return render(request,"myapp/registration.html")

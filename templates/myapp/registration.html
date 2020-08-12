@@ -12,16 +12,16 @@
             
             <form method="POST" class="form-group">
                 {% csrf_token %}
-                <label for="first_name">First Name </label>
-                <input type="text" class="form-control" name="first_name" id="first_name" required><br>
-                <label for="last_name">Last Name </label>
-                <input type="text" class="form-control" name="last_name" id="last_name" required><br>
-                <label for="email">Email </label>
-                <input type="email" class="form-control" name="email" id="email" required><br>
-                <label for="phno">Phone Number </label>
-                <input type="text" class="form-control" name="phno" id="phno" pattern="[6-9]\d{9}" required><br>
-                <label for="pwd">Password </label>
-                <input type="password" class="form-control" name="pwd" id="pwd" required><br>
+                <lable for="First_Name">First Name</lable>
+                <input type="text" class="form-control" name="First_Name" id="First_Name" required></br>
+                <lable for="Last_Name">Last Name</lable>
+                <input type="text" class="form-control"  name="Last_Name" id="Last_Name" required></br>
+                <lable for="Email">E-mail</lable>
+                <input type="text" class="form-control"  name="Email" id="Email"></br>
+                <lable for="Phone_Number">Phone Number</lable>
+                <input type="text" class="form-control"  name="Phone_Number" id="Phone_Number" pattern="[6-9]\d{9}" required></br>
+                <lable for="Password">Password</lable>
+                <input type="password" class="form-control"  name="Password" id="Password" required></br>
                 <label>Birth Details</label>
                 <select aria-label="Day" name="birthday_day" id="day" title="Day" class="_9407 _5dba _8esg" required><option value="0">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11" selected="1">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
                 <select aria-label="Month" name="birthday_month" id="month" title="Month" class="_9407 _5dba _8esg" required><option value="0">Month</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8" selected="1">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
